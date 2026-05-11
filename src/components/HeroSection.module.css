@@ -1,0 +1,117 @@
+.hero {
+  background: var(--color-white);
+}
+
+.inner {
+  width: min(var(--container-width), 100%);
+  margin: 0 auto;
+  padding: var(--hero-padding-top) var(--container-padding) var(--hero-padding-bottom);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, var(--hero-image-width));
+  align-items: center;
+  gap: var(--hero-grid-gap);
+}
+
+.copy {
+  padding-top: 34px;
+}
+
+.copy h1 {
+  max-width: 590px;
+  margin: 0 0 38px;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: var(--text-heading);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: var(--line-heading);
+}
+
+.copy p {
+  max-width: 585px;
+  margin: 0 0 var(--space-sm);
+  color: var(--color-black);
+  font-size: var(--text-body);
+  line-height: var(--line-body);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin-top: 45px;
+}
+
+.actions a {
+  width: var(--button-width);
+  height: var(--button-height);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-family: var(--font-nav);
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.goldButton {
+  background: var(--color-gold);
+}
+
+.wineButton {
+  background: var(--color-wine);
+}
+
+.imageWrap {
+  width: min(100%, var(--hero-image-width));
+  height: var(--hero-image-height);
+  overflow: hidden;
+  border-top-left-radius: var(--radius-hero);
+  border-bottom-right-radius: var(--radius-hero);
+  justify-self: end;
+}
+
+.imageWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 980px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .copy {
+    padding-top: 0;
+  }
+
+  .imageWrap {
+    justify-self: start;
+    height: auto;
+    aspect-ratio: 84 / 86;
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1300px) {
+  .inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 58vw);
+  }
+
+  .imageWrap {
+    height: auto;
+    aspect-ratio: 84 / 86;
+  }
+}
+
+@media (max-width: 620px) {
+  .copy h1 {
+    margin-bottom: var(--space-lg);
+  }
+
+  .actions {
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+  }
+}

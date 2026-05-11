@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Concert+One&family=Playfair+Display:wght@400&family=Roboto:wght@400;500;600&family=Roboto+Condensed:ital,wght@1,300;1,400;1,600&display=swap");
+
+:root {
+  --font-display: "Abril Fatface", Georgia, serif;
+  --font-body: "Roboto", Arial, sans-serif;
+  --font-nav: "Playfair Display", Georgia, serif;
+  --font-logo: "Concert One", sans-serif;
+  --font-condensed: "Roboto Condensed", Arial, sans-serif;
+
+  --color-white: #ffffff;
+  --color-cream: #f9efe7;
+  --color-text: #433735;
+  --color-black: #060606;
+  --color-muted: #777071;
+  --color-wine: #883e40;
+  --color-gold: #d2b753;
+  --color-soft-gray: #f8f8f8;
+  --color-star: #ffd64d;
+
+  --space-xxs: 6px;
+  --space-xs: 10px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 88px;
+  --space-4xl: 120px;
+  --space-5xl: 160px;
+
+  --container-width: 1440px;
+  --container-padding: 120px;
+  --container-padding-tablet: 52px;
+  --container-padding-mobile: 24px;
+
+  --nav-height: 73px;
+  --header-logo-width: 130px;
+  --footer-logo-width: 130px;
+
+  --hero-padding-top: 48px;
+  --hero-padding-bottom: 86px;
+  --hero-grid-gap: 72px;
+  --hero-image-width: 591px;
+  --hero-image-height: 599px;
+
+  --band-padding-top: 42px;
+  --band-padding-bottom: 64px;
+  --band-image-width: 686px;
+  --band-image-height: 620px;
+  --band-grid-gap: 78px;
+
+  --feature-padding-top: 116px;
+  --feature-grid-gap: 98px;
+  --feature-image-width: 627px;
+  --feature-image-height: 480px;
+
+  --gallery-padding-top: 100px;
+  --gallery-padding-bottom: 122px;
+  --gallery-image-height: 454px;
+  --gallery-grid-gap: 72px;
+
+  --testimonial-padding-y: 92px;
+  --footer-padding-y: 48px;
+
+  --button-width: 133px;
+  --button-height: 48px;
+  --button-large-width: 133px;
+  --button-large-height: 48px;
+
+  --radius-hero: 80px;
+  --radius-band: 36px;
+  --radius-none: 0;
+
+  --text-nav: 15px;
+  --text-body: 16.3px;
+  --text-small: 15.4px;
+  --text-footer: 12px;
+  --text-quote: 18.3px;
+  --text-heading: 68.4px;
+  --text-heading-lg: 68.4px;
+  --text-heading-md: 68.4px;
+  --text-card-title: 68.4px;
+  --text-testimonial: 39px;
+  --text-phone: 33.3px;
+
+  --line-body: normal;
+  --line-heading: 75px;
+  --line-compact: 1.05;
+  --line-relaxed: 21.2px;
+  --shadow-none: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-white);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--line-body);
+  color: var(--color-black);
+}
+
+button,
+a {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 1300px) {
+  :root {
+    --container-padding: var(--container-padding-tablet);
+    --text-heading: 72px;
+    --text-heading-lg: 78px;
+    --text-heading-md: 62px;
+    --text-card-title: 50px;
+    --text-testimonial: 38px;
+    --text-body: 19px;
+    --hero-grid-gap: 44px;
+    --band-grid-gap: 54px;
+    --feature-grid-gap: 72px;
+    --gallery-grid-gap: 36px;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --container-padding: var(--container-padding-mobile);
+    --nav-height: 86px;
+    --header-logo-width: 148px;
+    --text-heading: 48px;
+    --text-heading-lg: 48px;
+    --text-heading-md: 44px;
+    --text-card-title: 42px;
+    --text-testimonial: 30px;
+    --text-phone: 34px;
+    --text-body: 16px;
+    --text-nav: 14px;
+    --hero-padding-top: 56px;
+    --hero-padding-bottom: 72px;
+    --band-padding-top: 54px;
+    --band-padding-bottom: 64px;
+    --feature-padding-top: 76px;
+    --gallery-padding-top: 68px;
+    --gallery-padding-bottom: 84px;
+    --testimonial-padding-y: 86px;
+    --footer-padding-y: 54px;
+    --button-width: 158px;
+    --button-height: 58px;
+    --button-large-width: 180px;
+    --button-large-height: 66px;
+    --radius-hero: 58px;
+  }
+}

@@ -1,0 +1,43 @@
+.section {
+  background: var(--color-soft-gray);
+}
+
+.inner {
+  width: min(var(--container-width), 100%);
+  margin: 0 auto;
+  padding: var(--testimonial-padding-y) var(--container-padding);
+  text-align: center;
+}
+
+.stars {
+  color: var(--color-star);
+  font-size: 34px;
+  letter-spacing: 4px;
+  -webkit-text-stroke: 1px var(--color-black);
+}
+
+.inner h2 {
+  margin: var(--space-xs) 0 var(--space-xl);
+  color: var(--color-wine);
+  font-size: var(--text-testimonial);
+  font-weight: 700;
+  line-height: var(--line-body);
+}
+
+.inner blockquote {
+  max-width: 820px;
+  margin: 0 auto var(--space-xl);
+  font-size: var(--text-quote);
+  font-family: var(--font-condensed);
+  font-style: italic;
+  line-height: var(--line-relaxed);
+}
+
+.inner p {
+  margin: 0;
+  color: var(--color-muted);
+  font-family: var(--font-condensed);
+  font-size: 28px;
+  font-style: italic;
+  line-height: var(--line-relaxed);
+}

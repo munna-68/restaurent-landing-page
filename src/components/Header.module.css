@@ -1,0 +1,79 @@
+.header {
+  min-height: var(--nav-height);
+  background: var(--color-cream);
+}
+
+.inner {
+  width: min(var(--container-width), 100%);
+  min-height: var(--nav-height);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+}
+
+.logoLink {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo {
+  width: var(--header-logo-width);
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+  font-family: var(--font-nav);
+  font-size: var(--text-nav);
+  font-weight: 400;
+}
+
+.nav a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.bookButton {
+  width: var(--button-large-width);
+  height: var(--button-large-height);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-wine);
+  color: var(--color-white) !important;
+  font-family: var(--font-nav);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 920px) {
+  .nav {
+    gap: var(--space-lg);
+  }
+
+  .bookButton {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .inner {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-sm);
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: var(--space-sm);
+  }
+}
